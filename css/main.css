@@ -11,7 +11,7 @@
 	box-shadow: 3px 4px 10px 1px gray;
 }
 .placeforlogo {
-	background-image: url("res/logoechoaudit.svg");
+	background-image: url("../res/logoechoaudit.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -39,7 +39,7 @@
 	box-shadow: 3px 4px 10px 1px gray;
 }
 .someart {
-	background-image: url("res/questman.gif");
+	background-image: url("../res/questman.gif");
 	background-size: contain;
 	background-repeat: no-repeat;
 }

@@ -32,7 +32,14 @@ span {
     display: block;
     margin-top: 10px;
 }
-
+.spanout {
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    padding: 10px;
+    background: rgb(230, 228, 228);
+}
 /* Desktop Template */
 @media screen /*and (min-width: 600px)*/ and (orientation:landscape) {
     .conteiner {

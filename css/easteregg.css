@@ -75,7 +75,7 @@ h1 {
 }
 
 #i1 {
-    background-image: url("res/sme50.jpg");
+    background-image: url("../res/sme50.jpg");
 
     background-position: 0px 0px;
     background-size: 15em 15em;
