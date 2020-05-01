@@ -3,6 +3,7 @@ h1 {
     font-size: 30px;
     margin-bottom: 25px;
 }
+
 .hheader {
     border-radius: 20px;
     border-width: 2px;
@@ -12,31 +13,35 @@ h1 {
     padding: 10px;
     margin-bottom: 15px;
 }
+
 .shopbox {
     border-radius: 20px;
     border-width: 1px;
     border-style: solid;
     border-color: grey;
-    display:grid;
+    display: grid;
     box-shadow: 2px 3px 4px 1px grey;
     padding: 15px;
     grid-row-gap: 15px;
     grid-column-gap: 15px;
 }
+
 .item {
     border-radius: 20px;
     border-width: 1px;
     border-style: solid;
     border-color: grey;
-    display:grid;
+    display: grid;
     box-shadow: 2px 3px 4px 1px grey;
     padding: 15px;
     margin: 10px;
 }
+
 .title {
     text-decoration: underline;
     text-align: center;
 }
+
 .disc {
     background-color: rgb(230, 228, 228);
     border-radius: 25px;
@@ -44,30 +49,33 @@ h1 {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .price {
     font-weight: bold;
     text-align: center;
 }
 
-.buybutton{
+.buybutton {
     text-align: center;
-    width: auto ;
+    width: auto;
     height: auto;
     font-size: 1em;
     padding: 5px;
     margin-top: 1em;
     background-color: #BBDEFB;;
     text-decoration: none;
-	color: #212121;
+    color: #212121;
     border-radius: 15px;
     border-style: solid;
     border-width: 0.5px;
     line-height: 2em;
 }
+
 .buybutton:hover {
     background-color: #448AFF;
     color: #FFF;
 }
+
 .itemimg {
     height: 15em;
     width: 15em;
@@ -75,104 +83,108 @@ h1 {
 }
 
 #i1 {
-    background-image: url("res/sme50.jpg");
+    background-image: url("../res/sme50.jpg");
 
     background-position: 0px 0px;
     background-size: 15em 15em;
 }
+
 /* Desktop Template */
 @media screen and (min-width: 600px) /*and (orientation:landscape)*/ {
     .shopbox {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
+
     .item {
-        grid-template-columns: repeat(auto,auto);
-        grid-template-rows: repeat(auto,auto);
-        grid-template-areas: 
-            ". img ."
-            "title title title"
-            "disc disc disc"
-            "price price price"
-            "btn  btn btn";
+        grid-template-columns: repeat(auto, auto);
+        grid-template-rows: repeat(auto, auto);
+        grid-template-areas: ". img ." "title title title" "disc disc disc" "price price price" "btn  btn btn";
     }
+
     .title {
         grid-area: title;
     }
+
     .itemimg {
         grid-area: img;
     }
+
     .price {
         grid-area: price;
     }
+
     .buybutton:hover {
         grid-area: btn;
     }
+
     .disc {
         grid-area: disc;
     }
+
     .item {
-        grid-template-columns: repeat(auto,auto);
-        grid-template-rows: repeat(auto,auto);
-        grid-template-areas: 
-            ". img ."
-            "title title title"
-            "disc disc disc"
-            "price price price"
-            "btn  btn btn";
+        grid-template-columns: repeat(auto, auto);
+        grid-template-rows: repeat(auto, auto);
+        grid-template-areas: ". img ." "title title title" "disc disc disc" "price price price" "btn  btn btn";
     }
+
     .buybutton {
         grid-area: btn;
 
     }
 }
+
 /* Smartphone Template */
 @media screen and (max-width: 600px) /*and (orientation:portrait)*/ {
     .shopbox {
-        grid-template-columns: repeat(auto,auto);
+        grid-template-columns: repeat(auto, auto);
         grid-template-rows: auto;
     }
+
     .hheader {
         padding: 1em;
         border-radius: 1.5em;
         font-size: 2em;
     }
+
     .title {
         grid-area: title;
     }
+
     .itemimg {
         grid-area: img;
     }
+
     .price {
         grid-area: price;
         font-size: 1.5em;
     }
+
     .buybutton:hover {
         grid-area: btn;
     }
+
     .disc {
         grid-area: disc;
         font-size: 1.5em;
         padding: 1.3em;
     }
+
     .item {
-        grid-template-columns: repeat(auto,auto);
-        grid-template-rows: repeat(auto,auto);
-        grid-template-areas: 
-            ". img ."
-            "title title title"
-            "disc disc disc"
-            "price price price"
-            "btn  btn btn";
+        grid-template-columns: repeat(auto, auto);
+        grid-template-rows: repeat(auto, auto);
+        grid-template-areas: ". img ." "title title title" "disc disc disc" "price price price" "btn  btn btn";
         border-radius: 2.5em;
         grid-gap: 1em;
     }
+
     .buybutton {
         grid-area: btn;
         font-size: 1.5em;
         border-radius: 1.5em;
         line-height: 2em;
     }
+
     .image {
         background-size: 15em 15em;
     }
