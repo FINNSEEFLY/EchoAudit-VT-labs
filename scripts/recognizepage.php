@@ -1,10 +1,10 @@
 <?php
-function definepage() {
+function recognizePage()
+{
     if (!isset($_GET['page'])) {
         return 'main';
-    }
-    else {
-        switch($_GET['page']) {
+    } else {
+        switch ($_GET['page']) {
             case 'main':
             case 'contacts':
             case 'easteregg':
@@ -13,7 +13,7 @@ function definepage() {
             case 'services':
             case 'staff':
                 return $_GET['page'];
-            break;
+                break;
             default:
                 return 'main';
         }

@@ -3,6 +3,7 @@ h1 {
     font-size: 30px;
     margin-bottom: 25px;
 }
+
 .newsbox {
     border-radius: 20px;
     border-width: 1px;
@@ -12,47 +13,56 @@ h1 {
     padding: 15px;
     margin-bottom: 15px;
 }
+
 .info {
     grid-area: info;
     background-color: rgb(230, 228, 228);
     border-radius: 15px;
     padding: 10px;
     min-width: 90%;
-    margin-top: 10px ;
-    
+    margin-top: 10px;
+
 }
+
 #YT {
     text-decoration: line-through;
 }
+
 .urllab {
     display: block;
     text-align: center;
-    width: auto ;
+    width: auto;
     height: auto;
     font-size: 1em;
     padding: 15px;
     background-color: #BBDEFB;;
     text-decoration: none;
-	color: #212121;
+    color: #212121;
     border-radius: 15px;
     border-style: solid;
-	border-width: 0.5px;
+    border-width: 0.5px;
 }
+
 .urllab:hover {
     background-color: #448AFF;
     color: #FFF;
 }
+
 /* Desktop Template */
-@media screen /*and (min-width: 600px)*/ and (orientation:landscape) {
+@media screen /*and (min-width: 600px)*/
+and (orientation: landscape) {
 
 }
+
 /* Smartphone Template */
-@media screen /*and (max-width: 600px)*/ and (orientation:portrait) {
+@media screen /*and (max-width: 600px)*/
+and (orientation: portrait) {
     .newsbox {
-        padding: 2em;  
+        padding: 2em;
         margin-bottom: 1.5em;
         border-radius: 2.5em;
     }
+
     .info {
         padding: 1.5em;
         margin-top: 1.2em;
