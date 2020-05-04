@@ -1,6 +1,6 @@
 <?php
 
-define("REGEXP", "(?i)http(s)?:\/\/(?!(www\.)?bsuir\.by([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-]*))(([\w-]+)(?:\.[\w-]+)+)([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])");
+define("REGEXP", "(?i)http(s)?:\/\/(?!(www\.)?bsuir\.by([\w.,@?^=%&;:\/~+#-]*[\w@?^=%&;\/~+#-]*))(([\w-]+)(\.[\w-]+)+)([\w.,@?^=%&;:\/~+#-]*[\w@?^=%&;\/~+#-])");
 define("FILE_MESSAGE_HISTORY", "messageHistory.php");
 
 function displayForm()

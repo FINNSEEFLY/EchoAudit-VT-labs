@@ -42,7 +42,6 @@ function displayForm()
     echo '</form>';
 }
 
-
 function displayArray($array): int
 {
     $result = 0;
@@ -56,7 +55,6 @@ function displayArray($array): int
     }
     return $result;
 }
-
 
 if (!isset($_POST['startRange'], $_POST['endRange'], $_POST['dirPath'], $_POST['charCombination'])) {
     displayForm();
