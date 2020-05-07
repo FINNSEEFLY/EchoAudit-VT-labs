@@ -67,10 +67,10 @@ if (!isset($_POST['startRange'], $_POST['endRange'], $_POST['dirPath'], $_POST['
         $readyToSearch = false;
     }
     if ($readyToSearch) {
-        $resulArray = findFiles($_POST['dirPath'], $_POST['startRange'], $_POST['endRange'], $_POST['charCombination']);
-        if ($resulArray !== null) {
-            if (count($resulArray) !== 0) {
-                if (displayArray($resulArray) == 0) {
+        $resultArray = findFiles($_POST['dirPath'], $_POST['startRange'], $_POST['endRange'], $_POST['charCombination']);
+        if ($resultArray !== null) {
+            if (count($resultArray) !== 0) {
+                if (displayArray($resultArray) == 0) {
                     echo '<span class="spanout"> В директории нет подходящих файлов </span>';
                     displayForm();
                 };
