@@ -1,8 +1,8 @@
 <?php
 
-require('external classes/PHPMailer.php');
-require('external classes/SMTP.php');
-require('external classes/Exception.php');
+require('vendor/phpmailer/phpmailer/src/PHPMailer.php');
+require('vendor/phpmailer/phpmailer/src/SMTP.php');
+require('vendor/phpmailer/phpmailer/src/Exception.php');
 
 define("REGEXP_WORD", "\b[\w\_\-\@\.]*\b");
 
